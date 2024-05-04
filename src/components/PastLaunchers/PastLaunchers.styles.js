@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { StyledButton, StyledWrapper } from "styles/globalStyle";
+import { StyledButton, StyledWrapper } from "components/UI/UI";
 import { grayColors } from "styles/colors/gray";
 
 export const PastLaunchersWrapper = styled(StyledWrapper)`

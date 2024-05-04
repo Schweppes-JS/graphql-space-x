@@ -1,4 +1,4 @@
-import { StyledHeadingContainer, StyledText, StyledTitle } from "styles/globalStyle";
+import { StyledHeadingContainer, StyledText, StyledTitle } from "components/UI/UI";
 import { convertUTCtoLocal } from "helpers/timeConvertor";
 
 import { PastLaunchCardImage, PastLaunchCardWrapper } from "./PastLaunchers.styles";

@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 
 import { LaunchStatistic } from "components/LaunchStatistic/LaunchStatistic";
-import { LaunchSwitcher } from "components/LaunchSwitcher/LaunchSwitcher";
+import { Fleets } from "components/Fleets/Fleets";
 import { PastLaunchers } from "components/PastLaunchers/PastLaunchers";
 import { Header } from "components/Header/Header";
 
@@ -27,7 +27,7 @@ function App() {
   return (
     <>
       <Header />
-      <LaunchSwitcher />
+      <Fleets />
       <LaunchStatistic />
       <PastLaunchers />
     </>

@@ -1,4 +1,4 @@
-import { StyledHeadingContainer, StyledText } from "styles/globalStyle";
+import { StyledHeadingContainer, StyledText } from "components/UI/UI";
 
 import { StyledHeadline } from "./Header.styles";
 

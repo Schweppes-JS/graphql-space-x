@@ -1,7 +1,7 @@
-import { StyledHeadingContainer, StyledTitle, StyledText } from "styles/globalStyle";
-import { useGetLaunches } from "api/queries";
+import { StyledHeadingContainer, StyledTitle, StyledText } from "components/UI/UI";
 
 import { PastLaunchButton, PastLaunchersBox, PastLaunchersList, PastLaunchersWrapper } from "./PastLaunchers.styles";
+import { useGetLaunches } from "./PastLaunchersHelpers";
 import { PastLaunchCard } from "./PastLaunchCard";
 
 export const PastLaunchers = () => {
