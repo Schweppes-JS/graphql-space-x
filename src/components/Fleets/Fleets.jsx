@@ -7,15 +7,23 @@ import { FleetsWrapper, StyledFleetList } from "./Fleets.styles";
 import { FleetCard } from "./FleetCard";
 
 export const Fleets = () => {
-  const { data, loading } = useQuery(GET_FLEETS);
+  const { data, loading, error } = useQuery(GET_FLEETS);
 
   const renderFleets = () => {
-    const fleets = Object.entries(data);
-    return fleets.map(([name, fleet]) => {
-      if (name === "roadster") return <FleetCard title={name} subtitle={`View details in its ${Math.round(fleet.period_days)} day journey`} />;
-      else return <FleetCard title={`${fleet.length} ${name}`} subtitle={`View details on the ${name} fleet`} />;
-    });
+    if (loading) return <StyledText centred>Loading...</StyledText>;
+    else if (error) return <StyledText centred>Something went wrong</StyledText>;
+    else {
+      const fleets = Object.entries(data);
+      return (
+        <StyledFleetList>
+          {fleets.map(([name, fleet]) => {
+            if (name === "roadster") return <FleetCard title={name} subtitle={`View details in its ${Math.round(fleet.period_days)} day journey`} />;
+            else return <FleetCard title={`${fleet.length} ${name}`} subtitle={`View details on the ${name} fleet`} />;
+          })}
+        </StyledFleetList>
+      );
+    }
   };
 
-  return <FleetsWrapper>{loading ? <StyledText>Loading...</StyledText> : <StyledFleetList>{renderFleets()}</StyledFleetList>}</FleetsWrapper>;
+  return <FleetsWrapper>{renderFleets()}</FleetsWrapper>;
 };

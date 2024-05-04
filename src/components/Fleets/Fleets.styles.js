@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { StyledWrapper } from "components/UI/UI";
 
 export const FleetsWrapper = styled.section`
+  display: flex;
+  align-items: center;
   padding: 2px;
   height: 118px;
   overflow: auto;

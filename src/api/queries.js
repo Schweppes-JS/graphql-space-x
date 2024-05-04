@@ -26,3 +26,19 @@ export const GET_FLEETS = gql`
     }
   }
 `;
+
+export const GET_LAUNCHES = gql`
+  query GetLaunches {
+    launches {
+      id
+      upcoming
+      launch_success
+      rocket {
+        rocket {
+          cost_per_launch
+        }
+      }
+      launch_year
+    }
+  }
+`;

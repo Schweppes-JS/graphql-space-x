@@ -1,5 +1,4 @@
-import { StyledHeadline } from "components/Header/Header.styles";
-import { StyledHeadingContainer, StyledText } from "components/UI/UI";
+import { StyledHeadingContainer, StyledText, StyledTitle } from "components/UI/UI";
 
 import { FleetCardWrapper } from "./Fleets.styles";
 
@@ -7,7 +6,7 @@ export const FleetCard = ({ title, subtitle }) => {
   return (
     <FleetCardWrapper size="small">
       <StyledHeadingContainer>
-        <StyledHeadline>{title}</StyledHeadline>
+        <StyledTitle>{title}</StyledTitle>
         <StyledText>{subtitle}</StyledText>
       </StyledHeadingContainer>
     </FleetCardWrapper>

@@ -45,6 +45,14 @@ export const StyledTitle = styled.p`
 `;
 
 export const StyledText = styled.p`
+  ${(props) =>
+    props.centred
+      ? `
+    margin: auto;
+    text-align: center;
+    align-self: center;
+  `
+      : ""}
   color: ${grayColors[500]};
   font-size: ${(props) => {
     switch (props.size) {
