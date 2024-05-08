@@ -18,8 +18,8 @@ export const LaunchStatistic = () => {
       return (
         <LaunchStatisticContainer>
           <LaunchCount count={data.launches.length} />
-          <LaunchesGraph />
-          <LaunchResume />
+          <LaunchesGraph launches={data.launches} />
+          <LaunchResume launches={data.launches} />
         </LaunchStatisticContainer>
       );
   };

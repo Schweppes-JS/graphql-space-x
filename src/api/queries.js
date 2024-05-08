@@ -33,12 +33,13 @@ export const GET_LAUNCHES = gql`
       id
       upcoming
       launch_success
+      launch_year
       rocket {
         rocket {
           cost_per_launch
+          success_rate_pct
         }
       }
-      launch_year
     }
   }
 `;

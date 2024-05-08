@@ -18,6 +18,7 @@ export const StyledWrapper = styled.section`
     }};
   }
 `;
+StyledWrapper.displayName = "StyledWrapper";
 
 export const StyledTitle = styled.p`
   color: ${grayColors[900]};
@@ -43,6 +44,7 @@ export const StyledTitle = styled.p`
   }};
   line-height: 150%;
 `;
+StyledTitle.displayName = "StyledTitle";
 
 export const StyledText = styled.p`
   ${(props) =>
@@ -65,12 +67,14 @@ export const StyledText = styled.p`
     }
   }};
 `;
+StyledText.displayName = "StyledText";
 
 export const StyledHeadingContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
 `;
+StyledHeadingContainer.displayName = "StyledHeadingContainer";
 
 export const StyledButton = styled.button`
   width: max-content;
@@ -87,3 +91,4 @@ export const StyledButton = styled.button`
     transform: scale(1.05);
   }
 `;
+StyledButton.displayName = "StyledButton";

@@ -13,6 +13,7 @@ export const FleetsWrapper = styled.section`
     grid-row: 2/3;
   }
 `;
+FleetsWrapper.displayName = "FleetsWrapper";
 
 export const StyledFleetList = styled.ul`
   display: flex;
@@ -22,7 +23,9 @@ export const StyledFleetList = styled.ul`
     gap: 20px;
   }
 `;
+StyledFleetList.displayName = "StyledFleetList";
 
 export const FleetCardWrapper = styled(StyledWrapper)`
   min-width: 206px;
 `;
+FleetCardWrapper.displayName = "FleetCardWrapper";

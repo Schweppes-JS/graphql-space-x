@@ -15,12 +15,14 @@ export const PastLaunchersWrapper = styled(StyledWrapper)`
     grid-row: 2/4;
   }
 `;
+PastLaunchersWrapper.displayName = "PastLaunchersWrapper";
 
 export const StyledPastLaunchersContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
 `;
+StyledPastLaunchersContainer.displayName = "StyledPastLaunchersContainer";
 
 export const PastLaunchersBox = styled.div`
   justify-content: space-between;
@@ -36,6 +38,7 @@ export const PastLaunchersBox = styled.div`
     gap: 32px;
   }
 `;
+PastLaunchersBox.displayName = "PastLaunchersBox";
 
 export const PastLaunchersList = styled.ul`
   width: 100%;
@@ -44,11 +47,13 @@ export const PastLaunchersList = styled.ul`
   flex-direction: column;
   gap: 20px;
 `;
+PastLaunchersList.displayName = "PastLaunchersList";
 
 export const PastLaunchCardWrapper = styled.li`
   display: flex;
   gap: 16px;
 `;
+PastLaunchCardWrapper.displayName = "PastLaunchCardWrapper";
 
 export const PastLaunchCardImage = styled.img`
   width: 54px;
@@ -56,7 +61,9 @@ export const PastLaunchCardImage = styled.img`
   background-color: ${grayColors[300]};
   border-radius: 8px;
 `;
+PastLaunchCardImage.displayName = "PastLaunchCardImage";
 
 export const PastLaunchButton = styled(StyledButton)`
   margin: 0 auto;
 `;
+PastLaunchButton.displayName = "PastLaunchButton";
